@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="pt-BR">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ACALMA AÍ - práticas simples para o dia a dia.</title>
+  <script src="/_sdk/element_sdk.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      box-sizing: border-box;
+    }
+    
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    html, body {
+      height: 100%;
+      overflow-x: hidden;
+    }
+    
+    .main-wrapper {
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+    
+    .serif-font {
+      font-family: 'Cormorant Garamond', serif;
+    }
+    
+    .sans-font {
+      font-family: 'Montserrat', sans-serif;
+    }
+    
+    .hero-bg {
+      background-image: url("img/fundo.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      min-height: 600px;
+    }
+    
+    .hero-overlay {
+      background: linear-gradient(180deg, rgba(249, 247, 244, 0.3) 0%, rgba(249, 247, 244, 0.8) 100%);
+    }
+    
+    .logo-container {
+      max-width: 500px;
+      margin: 0 auto 1.5rem auto;
+    }
+    
+    .logo-container img {
+      width: 200%;
+      height: auto;
+      filter: drop-shadow(0 2px 8px rgba(0,0,0,0.1));
+    }
+    
+    .fade-in {
+      animation: fadeIn 1s ease-in;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .pulse-btn { 
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes 
+    
+    {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(139, 116, 102, 0.7); }
+      50% { box-shadow: 0 0 0 15px rgba(139, 116, 102, 0); }
+    }
+    
+    .card-elegant {
+      background: white;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(139, 116, 102, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .card-elegant:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 30px rgba(139, 116, 102, 0.15);
+    }
+    
+    .divider-line {
+      width: 60px;
+      height: 3px;
+      margin: 1.5rem auto;
+    }
+    
+    .section-spacing {
+      padding: 4rem 1.5rem;
+    }
+    
+    @media (max-width: 768px) {
+      .section-spacing {
+        padding: 3rem 1rem;
+      }
+    }
+    .mentora {
+        display: flex;
+        align-items: flex-start; /* SOBE a imagem */
+        gap: 40px;
+    }
+
+    .texto {
+        width: 40%;
+        margin-left: auto;
+        font-family: serif;
+        font-size: 20px;
+        color: #5A5A5A;
+        text-align: right;
+    }   
+   @media (max-width: 768px) {
+  .mentora {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .texto {
+    width: 100%;
+    margin: 0 auto;       /* ← ESSENCIAL */
+    text-align: center;   /* ← ESSENCIAL */
+    font-size: 17px;
+    margin-top: 5%;
+  }
+
+  .foto {
+    width: 220px;
+    margin-bottom: 20px;
+  }
+}
+
+   
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body style="background-color: #fff5f5;">
+  <div class="main-wrapper"><!-- Hero Section -->
+   <section class="hero-bg">
+    <div class="hero-overlay">
+     <div class="max-w-5xl mx-auto px-6 py-16 md:py-24 text-center fade-in">
+      <div class="logo-container"><img src="img/logo.png" alt="Logo Acalma ai" onerror="this.style.display='none';">
+      </div>
+      <div class="divider-line" style="background-color: #D4C3B6;"></div>
+      <p id="subtitle" class="serif-font text-2xl md:text-3xl font-light mb-6" style="color: #2C2C2C;"></p>
+      <p id="hero-description" class="sans-font text-base md:text-lg font-light mb-10 max-w-2xl mx-auto" style="color: #5A5A5A; line-height: 1.8;">Um caminho simples para silenciar a mente e retomar o controle emocional
+
+Ansiedade não é fraqueza.
+É um pedido do seu corpo para desacelerar.</p><a href="https://pay.hotmart.com/D99375448P?off=2hlseoed&amp;hotfeature=51&amp;_hi=eyJjaWQiOiIxNzYzNjQ1OTk2OTk0NTg1NDE1NTc3OTYyMjk4OTAwIiwiYmlkIjoiMTc2MzY0NTk5Njk5NDU4NTQxNTU3Nzk2MjI5ODkwMCIsInNpZCI6ImI4OWQ3NjcxOGY4NTQyYTc5YjkwY2ZhZDFiMjFjMjJmIn0=..&amp;bid=." target="_blank" rel="noopener noreferrer" class="inline-block sans-font font-semibold px-12 py-4 rounded-full text-white transition-all duration-300 pulse-btn" style="background-color: #8B7466; text-decoration: none; font-size: 1.1rem; letter-spacing: 0.5px;">Acessar o curso ACALMA AÍ</a>
+      <p class="sans-font text-sm mt-6" style="color: #8B7466; font-weight: 500;">Mais de 1.200 pessoas já escolheram viver com mais calma</p>
+     </div>
+    </div>
+   </section><!-- Introduction Section -->
+   <section class="section-spacing" style="background-color: #FFFFFF;">
+    <div class="max-w-4xl mx-auto text-center">
+     <h2 class="serif-font text-3xl md:text-5xl font-light mb-6" style="color: #8B7466;">Você sente que sua mente não desliga nunca?</h2>
+     <div class="divider-line" style="background-color: #D4C3B6;"></div>
+     <p class="sans-font text-lg leading-relaxed mb-8" style="color: #5A5A5A;">Mesmo quando tudo está “bem”, a cabeça insiste em criar cenários,
+reviver problemas e antecipar situações que ainda nem aconteceram.</p>
+     <p class="serif-font text-4xl font-light mb-6" style="color: #8B7466;">Sua mente cansou de lutar sozinha.</p>
+    </div>
+   </section><!-- Para Quem é Section -->
+   <section class="section-spacing" style="background-color: #F9F7F4;">
+    <div class="max-w-6xl mx-auto">
+     <div class="text-center mb-12">
+      <h2 class="serif-font text-4xl md:text-5xl font-light mb-4" style="color: #8B7466;">Para quem é este curso?</h2>
+      <div class="divider-line" style="background-color: #D4C3B6;"></div>
+     </div>
+     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="card-elegant">
+       <div class="text-4xl mb-4">
+     <img src="img/1.png" alt="">
+       </div>
+       <h3 class="sans-font text-lg font-semibold mb-3" style="color: #2C2C2C;">Sofre com ansiedade leve a moderada</h3>
+       <p class="sans-font text-sm leading-relaxed" style="color: #5A5A5A;">Aquela inquietação constante, pensamentos acelerados e o corpo sempre em alerta, mesmo quando não há um perigo real.</p>
+      </div>
+      <div class="card-elegant">
+       <div class="text-4xl mb-4">
+        <img src="img/2.png" alt="">
+       </div>
+       <h3 class="sans-font text-lg font-semibold mb-3" style="color: #2C2C2C;">Se sente sobrecarregado emocionalmente</h3>
+       <p class="sans-font text-sm leading-relaxed" style="color: #5A5A5A;">Quando tudo parece demais, falta espaço para respirar e até pequenas tarefas se tornam pesadas.</p>
+      </div>
+      <div class="card-elegant">
+       <div class="text-4xl mb-4">
+        <img src="img/3.png" alt="">
+       </div>
+       <h3 class="sans-font text-lg font-semibold mb-3" style="color: #2C2C2C;">Quer aprender a se regular sem depender de remédios</h3>
+       <p class="sans-font text-sm leading-relaxed" style="color: #5A5A5A;">Buscando caminhos naturais, conscientes e possíveis para acalmar o corpo e organizar a mente no dia a dia.</p>
+      </div>
+      <div class="card-elegant">
+       <div class="text-4xl mb-4">
+        <img src="img/4.png" alt="">
+       </div>
+       <h3 class="sans-font text-lg font-semibold mb-3" style="color: #2C2C2C;">Busca autoconhecimento e equilíbrio emocional</h3>
+       <p class="sans-font text-sm leading-relaxed" style="color: #5A5A5A;">Desejo de se entender melhor, fortalecer a relação consigo e viver com mais presença e leveza.</p>
+      </div>
+      <div class="card-elegant">
+       <div class="text-4xl mb-4">
+        <img src="img/5.png" alt="">
+       </div>
+       <h3 class="sans-font text-lg font-semibold mb-3" style="color: #2C2C2C;">Sente dificuldade para relaxar e descansar de verdade</h3>
+       <p class="sans-font text-sm leading-relaxed" style="color: #5A5A5A;">Mesmo quando o dia termina, a mente continua acelerada e o corpo não consegue desligar.</p>
+      </div>
+      <div class="card-elegant">
+       <div class="text-4xl mb-4">
+        <img src="img/6.png" alt="">
+       </div>
+       <h3 class="sans-font text-lg font-semibold mb-3" style="color: #2C2C2C;">Quer aprender a lidar melhor com crises e gatilhos emocionais</h3>
+       <p class="sans-font text-sm leading-relaxed" style="color: #5A5A5A;">Para não se sentir refém das emoções e ganhar mais segurança nos momentos difíceis.</p>
+      </div>
+     </div>
+     <div class="text-center mt-12"><a href="https://pay.hotmart.com/D99375448P?off=2hlseoed&amp;hotfeature=51&amp;_hi=eyJjaWQiOiIxNzYzNjQ1OTk2OTk0NTg1NDE1NTc3OTYyMjk4OTAwIiwiYmlkIjoiMTc2MzY0NTk5Njk5NDU4NTQxNTU3Nzk2MjI5ODkwMCIsInNpZCI6ImI4OWQ3NjcxOGY4NTQyYTc5YjkwY2ZhZDFiMjFjMjJmIn0=..&amp;bid=." target="_blank" rel="noopener noreferrer" class="inline-block sans-font font-semibold px-12 py-4 rounded-full text-white transition-all duration-300" style="background-color: #8B7466; text-decoration: none;"> QUERO ME INSCREVER </a>
+     </div>
+    </div>
+   </section><!-- Quote Section -->
+   <section class="section-spacing" style="background-color: #FFFFFF;">
+    <div class="max-w-3xl mx-auto text-center">
+     <p class="serif-font text-3xl md:text-4xl font-light italic" style="color: #8B7466; line-height: 1.6;">"Relaxe. O agora é suficiente."</p>
+    </div>
+   </section><!-- O que é o curso -->
+   <section class="section-spacing" style="background-color: #F9F7F4;">
+    <div class="max-w-4xl mx-auto">
+     <h2 class="serif-font text-4xl md:text-5xl font-light text-center mb-8" style="color: #8B7466;">O que é o Curso ACALMA AÍ?</h2>
+     <div class="divider-line" style="background-color: #D4C3B6;"></div>
+     <div class="space-y-6 sans-font text-base md:text-lg leading-relaxed" style="color: #5A5A5A;">
+      <p><strong style="color: #8B7466;">O ACALMA AÍ é um curso online criado para ajudar você a lidar melhor com a ansiedade e o excesso de pensamentos do dia a dia.
+
+Ele não promete apagar sentimentos nem oferecer soluções mágicas.
+O que o curso propõe é ensinar caminhos práticos e conscientes para acalmar o corpo, organizar a mente e desenvolver mais equilíbrio emocional.
+<br>
+Ao longo das aulas, você aprende a:
+<br>
+<br>
+reconhecer os sinais da ansiedade
+<br>
+<br>
+se regular emocionalmente
+<br>
+<br>
+sair do modo de alerta constante
+<br>
+<br>
+criar momentos reais de pausa e presença
+<br>
+<br>
+Tudo isso com uma linguagem simples, acolhedora e acessível, respeitando o seu tempo e o seu processo.
+<br>
+O ACALMA AÍ é um convite para desacelerar, se escutar e construir uma relação mais leve consigo mesmo(a).</p>
+     </div>
+    </div>
+   </section><!-- Módulos -->
+   <section class="section-spacing" style="background-color: #FFFFFF;">
+    <div class="max-w-5xl mx-auto">
+     <h2 class="serif-font text-4xl md:text-5xl font-light text-center mb-4" style="color: #8B7466;">Os 6 Passos da Jornada</h2>
+     <div class="divider-line" style="background-color: #D4C3B6;"></div>
+     <p class="sans-font text-center text-lg mb-12" style="color: #5A5A5A;">Uma nova forma de viver</p>
+     <div class="space-y-6"><!-- Passo 01 -->
+      <div class="card-elegant">
+       <div class="flex items-start gap-4">
+        <div class="text-4xl">
+         <img src="img/passo1.png" alt="">
+        </div>
+        <div class="flex-1">
+         <h3 class="sans-font text-xl font-semibold mb-3" style="color: #8B7466;">Módulo 01</h3>
+         <h4 class="sans-font text-lg font-medium mb-3" style="color: #2C2C2C;">ENTENDENDO A ANSIEDADE</h4>
+         <ul class="sans-font text-sm space-y-2" style="color: #5A5A5A;">
+          <li> Todo mundo sente ansiedade em algum momento da vida.
+O problema começa quando ela deixa de ser um alerta e passa a atrapalhar sua rotina, seus relacionamentos e sua paz.
+Neste passo, você vai começar a entender a ansiedade sem julgamentos e sem complicação.</li>
+         </ul>
+        </div>
+       </div>
+       </div>
+      </div><!-- Passo 02 -->
+      <div class="card-elegant">
+       <div class="flex items-start gap-4">
+        <div class="text-4xl">
+         <img src="img/passo2.png" alt="">
+        </div>
+        <div class="flex-1">
+         <h3 class="serif-font text-2xl font-semibold mb-2" style="color: #8B7466;">PASSO 02</h3>
+         <h4 class="sans-font text-lg font-medium mb-3" style="color: #2C2C2C;">O QUE ATIVA A ANSIEDADE</h4>
+         <ul class="sans-font text-sm space-y-2" style="color: #5A5A5A;">
+          <li> A ansiedade não aparece do nada.
+Ela cresce aos poucos, alimentada por hábitos, pensamentos e emoções do dia a dia.
+
+Neste passo, você vai identificar o que ativa sua ansiedade para começar a ter mais controle sobre ela.</li>
+         </ul>
+        </div>
+       </div>
+      </div><!-- Passo 03 -->
+      <div class="card-elegant">
+       <div class="flex items-start gap-4">
+        <div class="text-4xl">
+         <img src="img/passo3.png" alt="">
+        </div>
+        <div class="flex-1">
+         <h3 class="serif-font text-2xl font-semibold mb-2" style="color: #8B7466;">PASSO 03</h3>
+         <h4 class="sans-font text-lg font-medium mb-3" style="color: #2C2C2C;">ANSIEDADE EMOCIONAL x ANSIEDADE MENTAL</h4>
+         <ul class="sans-font text-sm space-y-2" style="color: #5A5A5A;">
+          <li> A ansiedade nem sempre vem do mesmo lugar.
+Às vezes ela nasce no corpo. Outras vezes, na mente.
+Entender essa diferença ajuda você a cuidar melhor de si, sem se cobrar tanto.</li>
+         </ul>
+        </div>
+       </div>
+      </div><!-- Passo 04 -->
+      <div class="card-elegant">
+       <div class="flex items-start gap-4">
+        <div class="text-4xl">
+        <img src="img/passo4.png" alt="">
+        </div>
+        <div class="flex-1">
+         <h3 class="serif-font text-2xl font-semibold mb-2" style="color: #8B7466;">PASSO 04</h3>
+         <h4 class="sans-font text-lg font-medium mb-3" style="color: #2C2C2C;">O QUE FAZER DURANTE A CRISE</h4>
+         <ul class="sans-font text-sm space-y-2" style="color: #5A5A5A;">
+          <li>A crise de ansiedade assusta, mas ela não é perigosa.
+Neste passo, você aprende a atravessar o momento sem lutar contra ele.</li>
+         </ul>
+        </div>
+       </div>
+        </div><!-- Passo 05 -->
+      <div class="card-elegant">
+       <div class="flex items-start gap-4">
+        <div class="text-4xl">
+        <img src="img/passo5.png" alt="">
+        </div>
+        <div class="flex-1">
+         <h3 class="serif-font text-2xl font-semibold mb-2" style="color: #8B7466;">PASSO 05</h3>
+         <h4 class="sans-font text-lg font-medium mb-3" style="color: #2C2C2C;">HÁBITOS QUE ACALMAM A ANSIEDADE</h4>
+         <ul class="sans-font text-sm space-y-2" style="color: #5A5A5A;">
+          <li>A ansiedade não se regula apenas com pensamento.
+Ela também precisa de cuidado no corpo e na rotina.</li>
+         </ul>
+        </div>
+       </div>
+      </div><!-- Passo 06 -->
+      <div class="card-elegant">
+       <div class="flex items-start gap-4">
+        <div class="text-4xl">
+        <img src="img/passo6.png" alt="">
+        </div>
+        <div class="flex-1">
+         <h3 class="serif-font text-2xl font-semibold mb-2" style="color: #8B7466;">PASSO 06</h3>
+         <h4 class="sans-font text-lg font-medium mb-3" style="color: #2C2C2C;">EXERCÍCIO PRÁTICO — ACALMAR A MENTE</h4>
+         <ul class="sans-font text-sm space-y-2" style="color: #5A5A5A;">
+          <li>Aqui não existe certo ou errado.
+Existe presença.</li>
+      </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Bônus -->
+   <section class="section-spacing" style="background-color: #F9F7F4;">
+    <div class="max-w-5xl mx-auto">
+     <h2 class="serif-font text-4xl md:text-5xl font-light text-center mb-8" style="color: #8B7466;">Bônus Exclusivos</h2>
+     <div class="divider-line" style="background-color: #D4C3B6;"></div>
+     <p class="sans-font text-center text-lg mb-12" style="color: #5A5A5A;">Se você se inscrever agora, ainda recebe:</p>
+     <div class="grid md:grid-cols-3 gap-6">
+      <div class="card-elegant text-center">
+       <div class="text-5xl mb-4">
+        <img src="img/selo.png" alt="">
+       </div>
+       <h3 class="sans-font text-lg font-semibold mb-3" style="color: #8B7466;">Bônus 01</h3>
+       <p class="sans-font text-sm" style="color: #5A5A5A;">Exercício Dívida Sistêmica</p>
+      </div>
+      <div class="card-elegant text-center">
+       <div class="text-5xl mb-4">
+        <img src="img/selo.png" alt="">
+       </div>
+       <h3 class="sans-font text-lg font-semibold mb-3" style="color: #8B7466;">Bônus 02</h3>
+       <p class="sans-font text-sm" style="color: #5A5A5A;">Ho'oponopono para limpeza de medo e insegurança</p>
+      </div>
+      <div class="card-elegant text-center">
+       <div class="text-5xl mb-4">
+        <img src="img/selo.png" alt="">
+       </div>
+       <h3 class="sans-font text-lg font-semibold mb-3" style="color: #8B7466;">Bônus 03</h3>
+       <p class="sans-font text-sm" style="color: #5A5A5A;">E-book 07 Chakras</p>
+      </div>
+     </div>
+    </div>
+   </section><!-- Investimento -->
+   <section class="section-spacing" style="background-color: #FFFFFF;">
+    <div class="max-w-2xl mx-auto">
+     <h2 class="serif-font text-4xl md:text-5xl font-light text-center mb-8" style="color: #8B7466;">Investimento</h2>
+     <div class="divider-line" style="background-color: #D4C3B6;"></div>
+     <div class="card-elegant text-center" style="padding: 3rem 2rem;">
+      <p class="sans-font text-base mb-4 line-through" style="color: #999;">De R$ 197,00</p>
+      <p class="sans-font text-lg mb-6" style="color: #5A5A5A;">Por apenas:</p>
+      <div class="mb-6">
+       <p class="sans-font text-xl mb-2" style="color: #5A5A5A;"><span id="installment-count"></span></p>
+       <p class="serif-font text-6xl md:text-7xl font-bold" style="color: #8B7466;">R$ <span id="installment-price">39,90</span></p>
+      </div>
+      <p class="sans-font text-xl mb-8" style="color: #5A5A5A;" <span id="cash-price" style="color: #8B7466; font-weight: 600;"></span> </p><a href="https://pay.hotmart.com/D99375448P?off=2hlseoed&amp;hotfeature=51&amp;_hi=eyJjaWQiOiIxNzYzNjQ1OTk2OTk0NTg1NDE1NTc3OTYyMjk4OTAwIiwiYmlkIjoiMTc2MzY0NTk5Njk5NDU4NTQxNTU3Nzk2MjI5ODkwMCIsInNpZCI6ImI4OWQ3NjcxOGY4NTQyYTc5YjkwY2ZhZDFiMjFjMjJmIn0=..&amp;bid=." target="_blank" rel="noopener noreferrer" class="inline-block sans-font font-semibold px-12 py-4 rounded-full text-white transition-all duration-300 pulse-btn" style="background-color: #8B7466; text-decoration: none; font-size: 1.1rem; width: 100%; max-width: 400px;"> QUERO ME INSCREVER AGORA </a>
+      <p class="sans-font text-sm mt-6" style="color: #8B7466; font-weight: 500;"> Oferta especial por tempo limitado</p>
+     </div>
+    </div>
+   </section><!-- Garantia -->
+   <section class="section-spacing" style="background-color: #F9F7F4;">
+    <div class="max-w-3xl mx-auto text-center">
+     <div class="text-6xl mb-6">
+      🛡️
+     </div>
+     <h2 class="sans-font text-3xl font-bold mb-6" style="color: #8B7466;">GARANTIA COMPLETA DE 7 DIAS</h2>
+     <div class="divider-line" style="background-color: #D4C3B6;"></div>
+     <p class="serif-font text-2xl mb-6" style="color: #2C2C2C;">Sua transformação começa com confiança.</p>
+     <p class="sans-font text-base leading-relaxed" style="color: #5A5A5A;">Por isso, você tem <strong style="color: #8B7466;">7 dias de garantia incondicional</strong> para viver os primeiros passos da jornada Essência com tranquilidade. Se não for para você, devolvemos 100% do seu investimento.</p>
+    </div>
+     </section><!-- Sobre a Mentora -->
+   <section class="section-spacing" style="background-color: #FFFFFF;">
+   
+     <h2 class="serif-font text-4xl font-light mb-8" style="color: #8B7466; text-align: center;  font-weight: bold;">Conheça sua mentora</h2>
+      <h3 class="sans-font text-3xl font-bold mb-4" style="color: #2C2C2C; text-align: center;margin-top: 5%; font-family: serif; color: #8B7466;">Juliana M. Arruda</h3>
+      <div class="mentora">
+      <p class="texto" style="color: #5A5A5A; font-family: serif; font-size: 20px; text-align: right; width:40%; margin: 0%;   margin-left: auto ;text-align: left;">Juliana M. Arruda Psicanalista, Terapeuta, Escritora e Consteladora Familiar.
+Há mais de 10 anos auxilio pessoas em seus processos de autoconhecimento, cura emocional e busca por uma vida com mais leveza e propósito.Sou formada em Administração, com pós-graduação em Gestão de Pessoas e em Psicanálise Clínica, além de ser Mestre em Reiki.
+Co-autora dos livros “Transição de Carreira – A Coragem para Mudar e Reinventar-se” e “Ho’oponopono e Seus Caminhos”, acredito que cada pessoa tem o potencial de transformar a sua própria história</p>
+     <img src="img/ju.png" alt="" class="foto">
+</div>
+</div>
+     
+
+   </section><!-- CTA Final -->
+   <section class="section-spacing" style="background: linear-gradient(135deg, hsl(234, 51%, 72%) 0%, #3f39dc 100%);">
+    <div class="max-w-4xl mx-auto text-center">
+     <h2 class="serif-font text-4xl md:text-5xl font-light mb-6" style="color: #ffffff;">Está pronta(o) para acalmar sua mente?</h2>
+     <p class="sans-font text-lg mb-10" style="color: #FFFFFF; opacity: 0.95;">Comece hoje sua jornada de cuidado, presença e leveza emocional.</p><a href="https://pay.hotmart.com/D99375448P?off=2hlseoed&amp;hotfeature=51&amp;_hi=eyJjaWQiOiIxNzYzNjQ1OTk2OTk0NTg1NDE1NTc3OTYyMjk4OTAwIiwiYmlkIjoiMTc2MzY0NTk5Njk5NDU4NTQxNTU3Nzk2MjI5ODkwMCIsInNpZCI6ImI4OWQ3NjcxOGY4NTQyYTc5YjkwY2ZhZDFiMjFjMjJmIn0=..&amp;bid=." target="_blank" rel="noopener noreferrer" class="inline-block sans-font font-semibold px-14 py-5 rounded-full transition-all duration-300" style="background-color: #FFFFFF; color: #8B7466; text-decoration: none; font-size: 1.2rem;">QUERO ME ACALMAR </a>
+     <p class="sans-font text-sm mt-6" style="color: #FFFFFF; opacity: 0.9;"> Acesso imediato após a inscrição</p>
+    </div>
+   </section>
+  </div>
+  <script>
+    const defaultConfig = {
+
+      background_color: "#F9F7F4",
+      surface_color: "#FFFFFF",
+      text_color: "#2C2C2C",
+      primary_action_color: "#8B7466",
+      secondary_action_color: "#D4C3B6",
+      main_title: "ESSÊNCIA",
+      subtitle: "04 passos para uma vida mais leve",
+      hero_description: "Descubra como viver com mais leveza, presença e propósito. Uma jornada de reconexão com sua essência.",
+      course_name: "O Curso Essência",
+      installment_price: "8,14",
+      installment_count: "4",
+      cash_price: "29,90"
+    };
+
+    async function onConfigChange(config) {
+      const backgroundColor = config.background_color || defaultConfig.background_color;
+      const surfaceColor = config.surface_color || defaultConfig.surface_color;
+      const textColor = config.text_color || defaultConfig.text_color;
+      const primaryColor = config.primary_action_color || defaultConfig.primary_action_color;
+      const secondaryColor = config.secondary_action_color || defaultConfig.secondary_action_color;
+
+      document.body.style.backgroundColor = backgroundColor;
+
+      const cards = document.querySelectorAll('.card-elegant');
+      cards.forEach(card => {
+        card.style.backgroundColor = surfaceColor;
+      });
+
+      const buttons = document.querySelectorAll('a[href*="hotmart"]');
+      buttons.forEach(button => {
+        if (!button.parentElement.style.background.includes('gradient')) {
+          button.style.backgroundColor = primaryColor;
+        }
+      });
+
+      document.getElementById('main-title').textContent = config.main_title || defaultConfig.main_title;
+      document.getElementById('subtitle').textContent = config.subtitle || defaultConfig.subtitle;
+      document.getElementById('hero-description').textContent = config.hero_description || defaultConfig.hero_description;
+      document.getElementById('installment-count').textContent = config.installment_count || defaultConfig.installment_count;
+      document.getElementById('installment-price').textContent = config.installment_price || defaultConfig.installment_price;
+      document.getElementById('cash-price').textContent = config.cash_price || defaultConfig.cash_price;
+    }
+
+    function mapToCapabilities(config) {
+      return {
+        recolorables: [
+          {
+            get: () => config.background_color || defaultConfig.background_color,
+            set: (value) => {
+              config.background_color = value;
+              window.elementSdk.setConfig({ background_color: value });
+            }
+          },
+          {
+            get: () => config.surface_color || defaultConfig.surface_color,
+            set: (value) => {
+              config.surface_color = value;
+              window.elementSdk.setConfig({ surface_color: value });
+            }
+          },
+          {
+            get: () => config.text_color || defaultConfig.text_color,
+            set: (value) => {
+              config.text_color = value;
+              window.elementSdk.setConfig({ text_color: value });
+            }
+          },
+          {
+            get: () => config.primary_action_color || defaultConfig.primary_action_color,
+            set: (value) => {
+              config.primary_action_color = value;
+              window.elementSdk.setConfig({ primary_action_color: value });
+            }
+          },
+          {
+            get: () => config.secondary_action_color || defaultConfig.secondary_action_color,
+            set: (value) => {
+              config.secondary_action_color = value;
+              window.elementSdk.setConfig({ secondary_action_color: value });
+            }
+          }
+        ],
+        borderables: [],
+        fontEditable: undefined,
+        fontSizeable: undefined
+      };
+    }
+
+    function mapToEditPanelValues(config) {
+      return new Map([
+        ["main_title", config.main_title || defaultConfig.main_title],
+        ["subtitle", config.subtitle || defaultConfig.subtitle],
+        ["hero_description", config.hero_description || defaultConfig.hero_description],
+        ["course_name", config.course_name || defaultConfig.course_name],
+        ["installment_count", config.installment_count || defaultConfig.installment_count],
+        ["installment_price", config.installment_price || defaultConfig.installment_price],
+        ["cash_price", config.cash_price || defaultConfig.cash_price]
+      ]);
+    }
+
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities,
+        mapToEditPanelValues
+      });
+    }
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b8342927287f200',t:'MTc2NzQ1MTMxOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
