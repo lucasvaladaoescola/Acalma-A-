@@ -30,7 +30,132 @@
       overflow-y: auto;
       overflow-x: hidden;
     }
-    
+   .video-curso {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 40px 0;
+  min-height: 100vh;
+}
+.video-curso {
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+/* FORMATO 9:16 (vertical) */
+.video-wrapper {
+  width: 100%;
+  max-width: 380px; /* tamanho ideal */
+  margin: 0 auto 2rem auto;
+  aspect-ratio: 9 / 16;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 30px 70px rgba(81, 51, 7, 0.4);
+}
+.video-curso {
+  background: #ffffff; /* fundo preto lateral */
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* Container vertical centralizado */
+.video-container {
+  width: 100%;
+  max-width: 400px; /* largura do vídeo */
+  margin: 0 auto 40px auto;
+  aspect-ratio: 9 / 16;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Botão */
+.btn-curso {
+  display: inline-block;
+  background-color: #8B7466;
+  color: white;
+  padding: 14px 45px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-curso:hover {
+  transform: scale(1.05);
+}
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* botão */
+.btn-curso {
+  display: inline-block;
+  background-color: #8B7466;
+  color: white;
+  padding: 14px 40px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.btn-curso:hover {
+  transform: scale(1.05);
+}
+
+.video-curso video {
+  width: 40%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 30px 70px rgba(81, 51, 7, 0.595);
+}
+
+@media (max-width: 1024px) {
+  .video-curso video {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .video-curso video {
+    width: 92%;
+  }
+}
+.botao-curso {
+  background-color: #8b7565;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.botao-curso:hover {
+  transform: scale(1.05);
+  background-color: #6f5c4e;
+}
+.bonus-section .card-elegant {
+  max-width: 260px;
+  margin: 0 auto;
+  padding: 20px 18px;
+  border-radius: 18px;
+}
+
+.bonus-section .card-elegant img {
+  width: 90px;
+  margin: 0 auto;
+}
+#botao
     .serif-font {
       font-family: 'Cormorant Garamond', serif;
     }
@@ -90,7 +215,11 @@
       box-shadow: 0 4px 20px rgba(139, 116, 102, 0.08);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    
+    @media (max-width: 768px) {
+  .descricao-card {
+    display: none;
+  }
+}
     .card-elegant:hover {
       transform: translateY(-5px);
       box-shadow: 0 8px 30px rgba(139, 116, 102, 0.15);
@@ -111,6 +240,49 @@
         padding: 3rem 1rem;
       }
     }
+
+   @media (max-width: 768px) {
+
+  .secao-modulos ul {
+    display: none;
+  }
+}
+.video-wrapper {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 30px 70px rgba(81, 51, 7, 0.595);
+}
+/* padrão = desktop */
+.texto-mobile{
+  display:none;
+}
+
+.texto-desktop{
+  display:block;
+}
+
+/* celular */
+@media (max-width:768px){
+
+  .texto-desktop{
+    display:none;
+  }
+
+  .texto-mobile{
+    display:block;
+  }
+
+}
+
+  
     .mentora {
         display: flex;
         align-items: flex-start; /* SOBE a imagem */
@@ -162,13 +334,34 @@
       <p id="hero-description" class="sans-font text-base md:text-lg font-light mb-10 max-w-2xl mx-auto" style="color: #5A5A5A; line-height: 1.8;">Um caminho simples para silenciar a mente e retomar o controle emocional
 
 Ansiedade não é fraqueza.
-É um pedido do seu corpo para desacelerar.</p><a href="https://pay.kiwify.com.br/RsdAxU7" target="_blank" rel="noopener noreferrer" class="inline-block sans-font font-semibold px-12 py-4 rounded-full text-white transition-all duration-300 pulse-btn" style="background-color: #8B7466; text-decoration: none; font-size: 1.1rem; letter-spacing: 0.5px;">Acessar o curso ACALMA AÍ</a>
+É um pedido do seu corpo para desacelerar.</p>
+<a href="https://pay.hotmart.com/D99375448P?off=2hlseoed&amp;hotfeature=51&amp;_hi=eyJjaWQiOiIxNzYzNjQ1OTk2OTk0NTg1NDE1NTc3OTYyMjk4OTAwIiwiYmlkIjoiMTc2MzY0NTk5Njk5NDU4NTQxNTU3Nzk2MjI5ODkwMCIsInNpZCI6ImI4OWQ3NjcxOGY4NTQyYTc5YjkwY2ZhZDFiMjFjMjJmIn0=..&amp;bid=." target="_blank" rel="noopener noreferrer" class="inline-block sans-font font-semibold px-12 py-4 rounded-full text-white transition-all duration-300 pulse-btn" style="background-color: #8B7466; text-decoration: none; font-size: 1.1rem; letter-spacing: 0.5px;">Acessar o curso ACALMA AÍ</a>
       <p class="sans-font text-sm mt-6" style="color: #8B7466; font-weight: 500;">Mais de 1.200 pessoas já escolheram viver com mais calma</p>
      </div>
     </div>
    </section><!-- Introduction Section -->
+
    <section class="section-spacing" style="background-color: #FFFFFF;">
     <div class="max-w-4xl mx-auto text-center">
+   
+    <section class="video-curso">
+
+  <div class="video-container">
+    <iframe 
+      src="https://www.youtube.com/embed/TyOvuyWUzuM?rel=0&modestbranding=1"
+      title="Apresentação"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <a href="https://pay.hotmart.com/D99375448P?off=2hlseoed&amp;hotfeature=51&amp;_hi=eyJjaWQiOiIxNzYzNjQ1OTk2OTk0NTg1NDE1NTc3OTYyMjk4OTAwIiwiYmlkIjoiMTc2MzY0NTk5Njk5NDU4NTQxNTU3Nzk2MjI5ODkwMCIsInNpZCI6ImI4OWQ3NjcxOGY4NTQyYTc5YjkwY2ZhZDFiMjFjMjJmIn0=..&amp;bid=." target="_blank" rel="noopener noreferrer" class="inline-block sans-font font-semibold px-12 py-4 rounded-full text-white transition-all duration-300 pulse-btn" style="background-color: #8B7466; text-decoration: none; font-size: 1.1rem; letter-spacing: 0.5px;">Quero me sentir mais leve</a>
+
+</section>
+
+ 
+      
      <h2 class="serif-font text-3xl md:text-5xl font-light mb-6" style="color: #8B7466;">Você sente que sua mente não desliga nunca?</h2>
      <div class="divider-line" style="background-color: #D4C3B6;"></div>
      <p class="sans-font text-lg leading-relaxed mb-8" style="color: #5A5A5A;">Mesmo quando tudo está “bem”, a cabeça insiste em criar cenários,
@@ -188,45 +381,45 @@ reviver problemas e antecipar situações que ainda nem aconteceram.</p>
      <img src="img/1.png" alt="">
        </div>
        <h3 class="sans-font text-lg font-semibold mb-3" style="color: #2C2C2C;">Sofre com ansiedade leve a moderada</h3>
-       <p class="sans-font text-sm leading-relaxed" style="color: #5A5A5A;">Aquela inquietação constante, pensamentos acelerados e o corpo sempre em alerta, mesmo quando não há um perigo real.</p>
+       <p class="descricao-card sans-font text-sm leading-relaxed" style="color: #5A5A5A;">Aquela inquietação constante, pensamentos acelerados e o corpo sempre em alerta, mesmo quando não há um perigo real.</p>
       </div>
       <div class="card-elegant">
        <div class="text-4xl mb-4">
         <img src="img/2.png" alt="">
        </div>
        <h3 class="sans-font text-lg font-semibold mb-3" style="color: #2C2C2C;">Se sente sobrecarregado emocionalmente</h3>
-       <p class="sans-font text-sm leading-relaxed" style="color: #5A5A5A;">Quando tudo parece demais, falta espaço para respirar e até pequenas tarefas se tornam pesadas.</p>
+      <p class="descricao-card sans-font text-sm leading-relaxed" style="color: #5A5A5A;">Quando tudo parece demais, falta espaço para respirar e até pequenas tarefas se tornam pesadas.</p>
       </div>
       <div class="card-elegant">
        <div class="text-4xl mb-4">
         <img src="img/3.png" alt="">
        </div>
        <h3 class="sans-font text-lg font-semibold mb-3" style="color: #2C2C2C;">Quer aprender a se regular sem depender de remédios</h3>
-       <p class="sans-font text-sm leading-relaxed" style="color: #5A5A5A;">Buscando caminhos naturais, conscientes e possíveis para acalmar o corpo e organizar a mente no dia a dia.</p>
+    <p class="descricao-card sans-font text-sm leading-relaxed" style="color: #5A5A5A;">Buscando caminhos naturais, conscientes e possíveis para acalmar o corpo e organizar a mente no dia a dia.</p>
       </div>
       <div class="card-elegant">
        <div class="text-4xl mb-4">
         <img src="img/4.png" alt="">
        </div>
        <h3 class="sans-font text-lg font-semibold mb-3" style="color: #2C2C2C;">Busca autoconhecimento e equilíbrio emocional</h3>
-       <p class="sans-font text-sm leading-relaxed" style="color: #5A5A5A;">Desejo de se entender melhor, fortalecer a relação consigo e viver com mais presença e leveza.</p>
+       <p class="descricao-card sans-font text-sm leading-relaxed" style="color: #5A5A5A;">Desejo de se entender melhor, fortalecer a relação consigo e viver com mais presença e leveza.</p>
       </div>
       <div class="card-elegant">
        <div class="text-4xl mb-4">
         <img src="img/5.png" alt="">
        </div>
        <h3 class="sans-font text-lg font-semibold mb-3" style="color: #2C2C2C;">Sente dificuldade para relaxar e descansar de verdade</h3>
-       <p class="sans-font text-sm leading-relaxed" style="color: #5A5A5A;">Mesmo quando o dia termina, a mente continua acelerada e o corpo não consegue desligar.</p>
+<p class="descricao-card sans-font text-sm leading-relaxed" style="color: #5A5A5A;">Mesmo quando o dia termina, a mente continua acelerada e o corpo não consegue desligar.</p>
       </div>
       <div class="card-elegant">
        <div class="text-4xl mb-4">
         <img src="img/6.png" alt="">
        </div>
        <h3 class="sans-font text-lg font-semibold mb-3" style="color: #2C2C2C;">Quer aprender a lidar melhor com crises e gatilhos emocionais</h3>
-       <p class="sans-font text-sm leading-relaxed" style="color: #5A5A5A;">Para não se sentir refém das emoções e ganhar mais segurança nos momentos difíceis.</p>
+<p class="descricao-card sans-font text-sm leading-relaxed" style="color: #5A5A5A;">Para não se sentir refém das emoções e ganhar mais segurança nos momentos difíceis.</p>
       </div>
      </div>
-     <div class="text-center mt-12"><a href="https://pay.kiwify.com.br/RsdAxU7" target="_blank" rel="noopener noreferrer" class="inline-block sans-font font-semibold px-12 py-4 rounded-full text-white transition-all duration-300" style="background-color: #8B7466; text-decoration: none;"> QUERO ME INSCREVER </a>
+     <div class="text-center mt-12"><a href="https://pay.hotmart.com/D99375448P?off=2hlseoed&amp;hotfeature=51&amp;_hi=eyJjaWQiOiIxNzYzNjQ1OTk2OTk0NTg1NDE1NTc3OTYyMjk4OTAwIiwiYmlkIjoiMTc2MzY0NTk5Njk5NDU4NTQxNTU3Nzk2MjI5ODkwMCIsInNpZCI6ImI4OWQ3NjcxOGY4NTQyYTc5YjkwY2ZhZDFiMjFjMjJmIn0=..&amp;bid=." target="_blank" rel="noopener noreferrer" class="inline-block sans-font font-semibold px-12 py-4 rounded-full text-white transition-all duration-300" style="background-color: #8B7466; text-decoration: none;"> QUERO ME INSCREVER </a>
      </div>
     </div>
    </section><!-- Quote Section -->
@@ -266,7 +459,7 @@ O ACALMA AÍ é um convite para desacelerar, se escutar e construir uma relaçã
      </div>
     </div>
    </section><!-- Módulos -->
-   <section class="section-spacing" style="background-color: #FFFFFF;">
+   <section class="section-spacing secao-modulos" style="background-color: #FFFFFF;">
     <div class="max-w-5xl mx-auto">
      <h2 class="serif-font text-4xl md:text-5xl font-light text-center mb-4" style="color: #8B7466;">Os 6 Passos da Jornada</h2>
      <div class="divider-line" style="background-color: #D4C3B6;"></div>
@@ -371,28 +564,28 @@ Existe presença.</li>
     </div>
    </section><!-- Bônus -->
    <section class="section-spacing" style="background-color: #F9F7F4;">
-    <div class="max-w-5xl mx-auto">
+    <div class="max-w-5xl mx-auto bonus-section">
      <h2 class="serif-font text-4xl md:text-5xl font-light text-center mb-8" style="color: #8B7466;">Bônus Exclusivos</h2>
      <div class="divider-line" style="background-color: #D4C3B6;"></div>
      <p class="sans-font text-center text-lg mb-12" style="color: #5A5A5A;">Se você se inscrever agora, ainda recebe:</p>
      <div class="grid md:grid-cols-3 gap-6">
       <div class="card-elegant text-center">
        <div class="text-5xl mb-4">
-        <img src="img/selo.webp" alt="">
+        <img src="img/bonus1.png" alt="">
        </div>
        <h3 class="sans-font text-lg font-semibold mb-3" style="color: #8B7466;">Bônus 01</h3>
        <p class="sans-font text-sm" style="color: #5A5A5A;">Exercício Dívida Sistêmica</p>
       </div>
       <div class="card-elegant text-center">
        <div class="text-5xl mb-4">
-        <img src="img/selo.webp" alt="">
+        <img src="img/bonus2.png" alt="">
        </div>
        <h3 class="sans-font text-lg font-semibold mb-3" style="color: #8B7466;">Bônus 02</h3>
        <p class="sans-font text-sm" style="color: #5A5A5A;">Ho'oponopono para limpeza de medo e insegurança</p>
       </div>
       <div class="card-elegant text-center">
        <div class="text-5xl mb-4">
-        <img src="img/selo.webp" alt="">
+        <img src="img/bonus3.png" alt="">
        </div>
        <h3 class="sans-font text-lg font-semibold mb-3" style="color: #8B7466;">Bônus 03</h3>
        <p class="sans-font text-sm" style="color: #5A5A5A;">E-book 07 Chakras</p>
@@ -402,7 +595,6 @@ Existe presença.</li>
    </section><!-- Investimento -->
    <section class="section-spacing" style="background-color: #FFFFFF;">
     <div class="max-w-2xl mx-auto">
-      <div class="logo-container"><img src="img/logo.png" alt="Logo Acalma ai" onerror="this.style.display='none';">
      <h2 class="serif-font text-4xl md:text-5xl font-light text-center mb-8" style="color: #8B7466;">Investimento</h2>
      <div class="divider-line" style="background-color: #D4C3B6;"></div>
      <div class="card-elegant text-center" style="padding: 3rem 2rem;">
@@ -412,7 +604,7 @@ Existe presença.</li>
        <p class="sans-font text-xl mb-2" style="color: #5A5A5A;"><span id="installment-count"></span></p>
        <p class="serif-font text-6xl md:text-7xl font-bold" style="color: #8B7466;">R$ <span id="installment-price">39,90</span></p>
       </div>
-      <p class="sans-font text-xl mb-8" style="color: #5A5A5A;" <span id="cash-price" style="color: #8B7466; font-weight: 600;"></span> </p><a href="https://pay.kiwify.com.br/RsdAxU7" target="_blank" rel="noopener noreferrer" class="inline-block sans-font font-semibold px-12 py-4 rounded-full text-white transition-all duration-300 pulse-btn" style="background-color: #8B7466; text-decoration: none; font-size: 1.1rem; width: 100%; max-width: 400px;"> QUERO ME INSCREVER AGORA </a>
+      <p class="sans-font text-xl mb-8" style="color: #5A5A5A;" <span id="cash-price" style="color: #8B7466; font-weight: 600;"></span> </p><a href="https://pay.hotmart.com/D99375448P?off=2hlseoed&amp;hotfeature=51&amp;_hi=eyJjaWQiOiIxNzYzNjQ1OTk2OTk0NTg1NDE1NTc3OTYyMjk4OTAwIiwiYmlkIjoiMTc2MzY0NTk5Njk5NDU4NTQxNTU3Nzk2MjI5ODkwMCIsInNpZCI6ImI4OWQ3NjcxOGY4NTQyYTc5YjkwY2ZhZDFiMjFjMjJmIn0=..&amp;bid=." target="_blank" rel="noopener noreferrer" class="inline-block sans-font font-semibold px-12 py-4 rounded-full text-white transition-all duration-300 pulse-btn" style="background-color: #8B7466; text-decoration: none; font-size: 1.1rem; width: 100%; max-width: 400px;"> QUERO ME INSCREVER AGORA </a>
       <p class="sans-font text-sm mt-6" style="color: #8B7466; font-weight: 500;"> Oferta especial por tempo limitado</p>
      </div>
     </div>
@@ -430,22 +622,40 @@ Existe presença.</li>
      </section><!-- Sobre a Mentora -->
    <section class="section-spacing" style="background-color: #FFFFFF;">
    
-     <h2 class="serif-font text-4xl font-light mb-8" style="color: #8B7466; text-align: center;  font-weight: bold;">Conheça sua mentora</h2>
-      <h3 class="sans-font text-3xl font-bold mb-4" style="color: #2C2C2C; text-align: center;margin-top: 5%; font-family: serif; color: #8B7466;">Juliana M. Arruda</h3>
-      <div class="mentora">
-      <p class="texto" style="color: #5A5A5A; font-family: serif; font-size: 20px; text-align: right; width:40%; margin: 0%;   margin-left: auto ;text-align: left;">Juliana M. Arruda Psicanalista, Terapeuta, Escritora e Consteladora Familiar.
-Há mais de 10 anos auxilio pessoas em seus processos de autoconhecimento, cura emocional e busca por uma vida com mais leveza e propósito.Sou formada em Administração, com pós-graduação em Gestão de Pessoas e em Psicanálise Clínica, além de ser Mestre em Reiki.
-Co-autora dos livros “Transição de Carreira – A Coragem para Mudar e Reinventar-se” e “Ho’oponopono e Seus Caminhos”, acredito que cada pessoa tem o potencial de transformar a sua própria história</p>
-     <img src="img/ju.png" alt="" class="foto">
+  <h2 class="serif-font text-4xl font-light mb-8" style="color: #8B7466; text-align: center; font-weight: bold;">
+Conheça sua mentora
+</h2>
+
+<h3 class="sans-font text-3xl font-bold mb-4" style="text-align: center;margin-top: 5%; font-family: serif; color: #8B7466;">
+
+</h3>
+
+<div class="mentora">
+
+  <!-- TEXTO GRANDE (desktop) -->
+  <p class="texto-desktop" style="color:#5A5A5A;font-family:serif;font-size:20px;width:40%;margin-left:auto;text-align:center;">
+  Juliana M. Arruda Psicanalista, Terapeuta, Escritora e Consteladora Familiar.
+  Há mais de 10 anos auxilio pessoas em seus processos de autoconhecimento, cura emocional e busca por uma vida com mais leveza e propósito.
+  Sou formada em Administração, com pós-graduação em Gestão de Pessoas e em Psicanálise Clínica, além de ser Mestre em Reiki.
+  Co-autora dos livros “Transição de Carreira – A Coragem para Mudar e Reinventar-se” e “Ho’oponopono e Seus Caminhos”, acredito que cada pessoa tem o potencial de transformar a sua própria história.
+  </p>
+
+  <!-- TEXTO CURTO (celular) -->
+  <p class="texto-mobile" style="color:#5A5A5A;font-family:serif;font-size:16px;text-align:center;padding:0 20px;">
+  Juliana M. Arruda é psicanalista e terapeuta há mais de 10 anos, ajudando pessoas a lidarem com emoções, ansiedade e autoconhecimento para viverem com mais leveza.
+  </p>
+
+  <img src="img/ju.png" alt="" class="foto">
+
 </div>
 </div>
      
 
    </section><!-- CTA Final -->
-   <section class="section-spacing" style="background: linear-gradient(135deg, #8B7466 0%, #8B7466 100%);">
+   <section class="section-spacing" style="background: linear-gradient(135deg, hsl(47, 23%, 52%) 0%, #b0a679 100%);">
     <div class="max-w-4xl mx-auto text-center">
      <h2 class="serif-font text-4xl md:text-5xl font-light mb-6" style="color: #ffffff;">Está pronta(o) para acalmar sua mente?</h2>
-     <p class="sans-font text-lg mb-10" style="color: #FFFFFF; opacity: 0.95;">Comece hoje sua jornada de cuidado, presença e leveza emocional.</p><a href="https://pay.kiwify.com.br/RsdAxU7" target="_blank" rel="noopener noreferrer" class="inline-block sans-font font-semibold px-14 py-5 rounded-full transition-all duration-300" style="background-color: #FFFFFF; color: #8B7466; text-decoration: none; font-size: 1.2rem;">QUERO ME ACALMAR </a>
+     <p class="sans-font text-lg mb-10" style="color: #FFFFFF; opacity: 0.95;">Comece hoje sua jornada de cuidado, presença e leveza emocional.</p><a href="https://pay.hotmart.com/D99375448P?off=2hlseoed&amp;hotfeature=51&amp;_hi=eyJjaWQiOiIxNzYzNjQ1OTk2OTk0NTg1NDE1NTc3OTYyMjk4OTAwIiwiYmlkIjoiMTc2MzY0NTk5Njk5NDU4NTQxNTU3Nzk2MjI5ODkwMCIsInNpZCI6ImI4OWQ3NjcxOGY4NTQyYTc5YjkwY2ZhZDFiMjFjMjJmIn0=..&amp;bid=." target="_blank" rel="noopener noreferrer" class="inline-block sans-font font-semibold px-14 py-5 rounded-full transition-all duration-300" style="background-color: #FFFFFF; color: #8B7466; text-decoration: none; font-size: 1.2rem;">QUERO ME ACALMAR </a>
      <p class="sans-font text-sm mt-6" style="color: #FFFFFF; opacity: 0.9;"> Acesso imediato após a inscrição</p>
     </div>
    </section>
@@ -453,11 +663,11 @@ Co-autora dos livros “Transição de Carreira – A Coragem para Mudar e Reinv
   <script>
     const defaultConfig = {
 
-      background_color: "#8B7466",
-      surface_color: "#8B7466",
+      background_color: "#F9F7F4",
+      surface_color: "#FFFFFF",
       text_color: "#2C2C2C",
       primary_action_color: "#8B7466",
-      secondary_action_color: "#8B7466",
+      secondary_action_color: "#D4C3B6",
       main_title: "ESSÊNCIA",
       subtitle: "04 passos para uma vida mais leve",
       hero_description: "Descubra como viver com mais leveza, presença e propósito. Uma jornada de reconexão com sua essência.",
@@ -563,12 +773,4 @@ Co-autora dos livros “Transição de Carreira – A Coragem para Mudar e Reinv
     }
   </script>
  <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9b8342927287f200',t:'MTc2NzQ1MTMxOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
-
 </html>
-
-
-
-
-
-
-
